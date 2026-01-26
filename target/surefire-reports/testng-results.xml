@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-26T10:25:03 CET" name="Surefire suite" finished-at="2026-01-26T10:25:25 CET" duration-ms="21891">
+    <groups>
+    </groups>
+    <test started-at="2026-01-26T10:25:03 CET" name="Surefire test" finished-at="2026-01-26T10:25:25 CET" duration-ms="21891">
+      <class name="hu.robertszujo.seleniumproject.LoanCalculatorTests">
+        <test-method is-config="true" signature="baseBeforeSuite()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:03 CET" name="baseBeforeSuite" finished-at="2026-01-26T10:25:03 CET" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeSuite -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:04 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:04 CET" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.acceptCookies_CookiePopupShouldDisappear()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:04 CET" name="beforeMethod" finished-at="2026-01-26T10:25:04 CET" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.acceptCookies_CookiePopupShouldDisappear()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="acceptCookies_CookiePopupShouldDisappear()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:04 CET" name="acceptCookies_CookiePopupShouldDisappear" description="Cookie popup should disappear after accepting cookies" finished-at="2026-01-26T10:25:05 CET" duration-ms="998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptCookies_CookiePopupShouldDisappear -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:06 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:06 CET" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:06 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:07 CET" duration-ms="623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_debtRatioAboveLimitShouldShowObligationError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:07 CET" name="beforeMethod" finished-at="2026-01-26T10:25:07 CET" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_debtRatioAboveLimitShouldShowObligationError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculateMaximumLoan_debtRatioAboveLimitShouldShowObligationError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:07 CET" name="calculateMaximumLoan_debtRatioAboveLimitShouldShowObligationError" description="Debt-to-income ratio above permitted threshold should trigger validation" finished-at="2026-01-26T10:25:09 CET" duration-ms="2167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMaximumLoan_debtRatioAboveLimitShouldShowObligationError -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:09 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:09 CET" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:09 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:10 CET" duration-ms="585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_incomeAtThresholdWithValidDebtRatioShouldReturnOffers()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:10 CET" name="beforeMethod" finished-at="2026-01-26T10:25:10 CET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_incomeAtThresholdWithValidDebtRatioShouldReturnOffers()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculateMaximumLoan_incomeAtThresholdWithValidDebtRatioShouldReturnOffers()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:10 CET" name="calculateMaximumLoan_incomeAtThresholdWithValidDebtRatioShouldReturnOffers" description="Eligible borrowers with acceptable ratios should receive loan offers" finished-at="2026-01-26T10:25:12 CET" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMaximumLoan_incomeAtThresholdWithValidDebtRatioShouldReturnOffers -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:12 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:12 CET" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:12 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:13 CET" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_overSixtyFiveApplicantShouldSeeUnableToCalculateNotice()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:13 CET" name="beforeMethod" finished-at="2026-01-26T10:25:13 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_overSixtyFiveApplicantShouldSeeUnableToCalculateNotice()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculateMaximumLoan_overSixtyFiveApplicantShouldSeeUnableToCalculateNotice()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:13 CET" name="calculateMaximumLoan_overSixtyFiveApplicantShouldSeeUnableToCalculateNotice" description="Over 65 applicant should be prompted to request a callback" finished-at="2026-01-26T10:25:15 CET" duration-ms="2084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMaximumLoan_overSixtyFiveApplicantShouldSeeUnableToCalculateNotice -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:15 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:15 CET" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:15 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:16 CET" duration-ms="613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_propertyValueBelowThresholdShouldShowCollateralError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:16 CET" name="beforeMethod" finished-at="2026-01-26T10:25:16 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_propertyValueBelowThresholdShouldShowCollateralError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculateMaximumLoan_propertyValueBelowThresholdShouldShowCollateralError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:16 CET" name="calculateMaximumLoan_propertyValueBelowThresholdShouldShowCollateralError" description="Property value below minimum threshold should block calculation" finished-at="2026-01-26T10:25:18 CET" duration-ms="2053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMaximumLoan_propertyValueBelowThresholdShouldShowCollateralError -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:18 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:18 CET" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:18 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:19 CET" duration-ms="593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_underageApplicantShouldSeeAgeRestrictionError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:19 CET" name="beforeMethod" finished-at="2026-01-26T10:25:19 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.calculateMaximumLoan_underageApplicantShouldSeeAgeRestrictionError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="calculateMaximumLoan_underageApplicantShouldSeeAgeRestrictionError()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:19 CET" name="calculateMaximumLoan_underageApplicantShouldSeeAgeRestrictionError" description="Underage applicant should receive business validation error" finished-at="2026-01-26T10:25:21 CET" duration-ms="2065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMaximumLoan_underageApplicantShouldSeeAgeRestrictionError -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:21 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:21 CET" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:21 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:22 CET" duration-ms="598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.loadCalculatorPage_cookiePopupShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:22 CET" name="beforeMethod" finished-at="2026-01-26T10:25:22 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.loadCalculatorPage_cookiePopupShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loadCalculatorPage_cookiePopupShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:22 CET" name="loadCalculatorPage_cookiePopupShouldBeDisplayed" description="Cookie popup should be displayed after page load" finished-at="2026-01-26T10:25:23 CET" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadCalculatorPage_cookiePopupShouldBeDisplayed -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:23 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:23 CET" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:23 CET" name="baseBeforeMethod" finished-at="2026-01-26T10:25:24 CET" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.loadPageAndAcceptCookies_CalculatorFormShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:24 CET" name="beforeMethod" finished-at="2026-01-26T10:25:24 CET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d4ff58]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoanCalculatorTests.loadPageAndAcceptCookies_CalculatorFormShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loadPageAndAcceptCookies_CalculatorFormShouldBeDisplayed()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:24 CET" name="loadPageAndAcceptCookies_CalculatorFormShouldBeDisplayed" description="Calculator form should be displayed after page load &amp; accepting cookies" finished-at="2026-01-26T10:25:25 CET" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPageAndAcceptCookies_CalculatorFormShouldBeDisplayed -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:25 CET" name="baseAfterMethod" finished-at="2026-01-26T10:25:25 CET" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseAfterSuite()[pri:0, instance:hu.robertszujo.seleniumproject.LoanCalculatorTests@19bb07ed]" started-at="2026-01-26T10:25:25 CET" name="baseAfterSuite" finished-at="2026-01-26T10:25:26 CET" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterSuite -->
+      </class> <!-- hu.robertszujo.seleniumproject.LoanCalculatorTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
