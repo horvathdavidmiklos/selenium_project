@@ -8,72 +8,35 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22 130</td><td></td><td></td></tr>
+<tr><th colspan="8">George Regression</th></tr>
+<tr><td><a href="#t0">Suite with listener</a></td><td class="num">25</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">64 217</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">hu.robertszujo.seleniumproject.BehaviorValidationTest</td><td><a href="#m0">maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases</a></td><td rowspan="1">1769723022302</td><td rowspan="1">21066</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">George Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Suite with listener &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest</td><td><a href="#m0">behavior_maxLoanDecreasesWithOverdraftLimit</a></td><td rowspan="3">1769733738953</td><td rowspan="3">6056</td></tr><tr class="passedeven"><td><a href="#m1">behavior_maxLoanDecreasesWithOverdraftLimit</a></td></tr><tr class="passedeven"><td><a href="#m2">behavior_maxLoanDecreasesWithOverdraftLimit</a></td></tr><tr class="passedeven"><td><a href="#m3">behavior_maxLoanIncreasesWithHouseholdIncome</a></td><td rowspan="3">1769733768996</td><td rowspan="3">4513</td></tr><tr class="passedeven"><td><a href="#m4">behavior_maxLoanIncreasesWithHouseholdIncome</a></td></tr><tr class="passedeven"><td><a href="#m5">behavior_maxLoanIncreasesWithHouseholdIncome</a></td></tr><tr class="passedeven"><td><a href="#m6">behavior_maxLoanIncreasesWithPropertyValue</a></td><td rowspan="3">1769733783762</td><td rowspan="3">3744</td></tr><tr class="passedeven"><td><a href="#m7">behavior_maxLoanIncreasesWithPropertyValue</a></td></tr><tr class="passedeven"><td><a href="#m8">behavior_maxLoanIncreasesWithPropertyValue</a></td></tr><tr class="passedeven"><td><a href="#m9">behavior_thmDecreasesWithInsurance</a></td><td rowspan="1">1769733788439</td><td rowspan="1">3833</td></tr><tr class="passedodd"><td rowspan="8">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest</td><td><a href="#m10">success_applicantExactly18YearsOld</a></td><td rowspan="1">1769733729837</td><td rowspan="1">3995</td></tr><tr class="passedodd"><td><a href="#m11">success_applicantExactly65YearsOld</a></td><td rowspan="1">1769733735579</td><td rowspan="1">4365</td></tr><tr class="passedodd"><td><a href="#m12">success_dualEarnerIncomeExactlyAtMinimum</a></td><td rowspan="1">1769733741277</td><td rowspan="1">6929</td></tr><tr class="passedodd"><td><a href="#m13">success_jtmExactlyAt50PercentLimit</a></td><td rowspan="1">1769733749478</td><td rowspan="1">3792</td></tr><tr class="passedodd"><td><a href="#m14">success_jtmExactlyAt60PercentLimit</a></td><td rowspan="1">1769733754567</td><td rowspan="1">4186</td></tr><tr class="passedodd"><td><a href="#m15">success_overdraftLimitExactlyAt800kThreshold</a></td><td rowspan="1">1769733760061</td><td rowspan="1">4416</td></tr><tr class="passedodd"><td><a href="#m16">success_propertyValueExactlyAtMinimum</a></td><td rowspan="1">1769733765628</td><td rowspan="1">2911</td></tr><tr class="passedodd"><td><a href="#m17">success_singleEarnerIncomeExactlyAtMinimum</a></td><td rowspan="1">1769733769611</td><td rowspan="1">2649</td></tr><tr class="passedeven"><td rowspan="7">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest</td><td><a href="#m18">failed_applicantTooOld</a></td><td rowspan="1">1769733729837</td><td rowspan="1">3976</td></tr><tr class="passedeven"><td><a href="#m19">failed_applicantTooYoung</a></td><td rowspan="1">1769733735481</td><td rowspan="1">4130</td></tr><tr class="passedeven"><td><a href="#m20">failed_dualEarnerBelowMinimumIncome</a></td><td rowspan="1">1769733741082</td><td rowspan="1">2909</td></tr><tr class="passedeven"><td><a href="#m21">failed_jtmViolation50PercentRule</a></td><td rowspan="1">1769733745662</td><td rowspan="1">3862</td></tr><tr class="passedeven"><td><a href="#m22">failed_jtmViolation60PercentRule</a></td><td rowspan="1">1769733751379</td><td rowspan="1">4334</td></tr><tr class="passedeven"><td><a href="#m23">failed_propertyValueBelowMinimum</a></td><td rowspan="1">1769733757095</td><td rowspan="1">3778</td></tr><tr class="passedeven"><td><a href="#m24">failed_singleEarnerBelowMinimumIncome</a></td><td rowspan="1">1769733762097</td><td rowspan="1">3627</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">hu.robertszujo.seleniumproject.BehaviorValidationTest#maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=144.0.7559.109)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f33b695e396bea14870c750639102e0d, findElement {using=css selector, value=input.mennyit_kaphatok}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HORVAT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63827}, goog:processID: 1344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63827/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f33b695e396bea14870c750639102e0d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy6/jdk.proxy6.$Proxy44.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at hu.robertszujo.seleniumproject.utils.ElementActions.clickWhenClickable(ElementActions.java:70)
-	at hu.robertszujo.seleniumproject.pages.LoanCalculatorPage.clickCalculateButton(LoanCalculatorPage.java:135)
-	at hu.robertszujo.seleniumproject.BehaviorValidationTest.calculateMaxLoanAmount(BehaviorValidationTest.java:143)
-	at hu.robertszujo.seleniumproject.BehaviorValidationTest.maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases(BehaviorValidationTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1212)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1090)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:910)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Suite with listener</h2><h3 id="m0">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanDecreasesWithOverdraftLimit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>125000000</td><td>true</td><td>100000</td><td>200001</td><td>700000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanDecreasesWithOverdraftLimit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>80000000</td><td>true</td><td>20000</td><td>100000</td><td>800000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanDecreasesWithOverdraftLimit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>100000000</td><td>true</td><td>0</td><td>150000</td><td>1000000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithHouseholdIncome</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>155000000</td><td>true</td><td>20000</td><td>1500000</td><td>1550000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithHouseholdIncome</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>100000000</td><td>true</td><td>0</td><td>1000000</td><td>1100000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithHouseholdIncome</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>125000000</td><td>true</td><td>100000</td><td>1200000</td><td>1300000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithPropertyValue</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>30000000</td><td>35000000</td><td>true</td><td>20000</td><td>1000000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithPropertyValue</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>30000000</td><td>40000000</td><td>false</td><td>0</td><td>3000000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_maxLoanIncreasesWithPropertyValue</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>20000000</td><td>25000000</td><td>true</td><td>100000</td><td>950000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest#behavior_thmDecreasesWithInsurance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_applicantExactly18YearsOld</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_applicantExactly65YearsOld</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_dualEarnerIncomeExactlyAtMinimum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_jtmExactlyAt50PercentLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_jtmExactlyAt60PercentLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_overdraftLimitExactlyAt800kThreshold</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_propertyValueExactlyAtMinimum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest#success_singleEarnerIncomeExactlyAtMinimum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_applicantTooOld</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_applicantTooYoung</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_dualEarnerBelowMinimumIncome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_jtmViolation50PercentRule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_jtmViolation60PercentRule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_propertyValueBelowMinimum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest#failed_singleEarnerBelowMinimumIncome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

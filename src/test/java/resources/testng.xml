@@ -5,7 +5,7 @@
     <listeners>
         <listener class-name="hu.robertszujo.seleniumproject.TestListener"/>
     </listeners>
-    <test name="Suite with listener" preserve-order="true" parallel="classes" verbose="1">
+    <test name="Suite with listener" parallel="classes" verbose="1">
         <packages>
             <package name="hu.robertszujo.seleniumproject.*"/>
         </packages>

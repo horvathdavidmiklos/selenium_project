@@ -1,5 +1,6 @@
-hu\robertszujo\seleniumproject\Constant.class
-hu\robertszujo\seleniumproject\BehaviorValidationTest.class
-hu\robertszujo\seleniumproject\NegativeScenarioTest.class
+hu\robertszujo\seleniumproject\loancalculator\BehaviorValidationTest.class
+hu\robertszujo\seleniumproject\loancalculator\NegativeScenarioTest.class
+hu\robertszujo\seleniumproject\helper\FormState.class
 hu\robertszujo\seleniumproject\BaseTestClass.class
-hu\robertszujo\seleniumproject\FormState.class
+hu\robertszujo\seleniumproject\helper\Constant.class
+hu\robertszujo\seleniumproject\loancalculator\BoundaryPositiveTest.class

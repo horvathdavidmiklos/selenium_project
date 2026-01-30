@@ -1,158 +1,870 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T22:43:41 CET" name="Surefire suite" finished-at="2026-01-29T22:44:03 CET" duration-ms="22130">
+  <suite started-at="2026-01-30T01:42:08 CET" name="George Regression" finished-at="2026-01-30T01:43:12 CET" duration-ms="64217">
     <groups>
     </groups>
-    <test started-at="2026-01-29T22:43:41 CET" name="Surefire test" finished-at="2026-01-29T22:44:03 CET" duration-ms="22130">
-      <class name="hu.robertszujo.seleniumproject.BehaviorValidationTest">
-        <test-method is-config="true" signature="baseBeforeSuite()[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab]" started-at="2026-01-29T22:43:40 CET" name="baseBeforeSuite" finished-at="2026-01-29T22:43:41 CET" duration-ms="385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- baseBeforeSuite -->
-        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab]" started-at="2026-01-29T22:43:41 CET" name="baseBeforeMethod" finished-at="2026-01-29T22:43:42 CET" duration-ms="908" status="PASS">
+    <test started-at="2026-01-30T01:42:08 CET" name="Suite with listener" finished-at="2026-01-30T01:43:12 CET" duration-ms="64217">
+      <class name="hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest">
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:08 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:09 CET" duration-ms="1416" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@57916acc]]>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases()[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_applicantTooOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseBeforeMethod -->
-        <test-method signature="maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases()[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab]" started-at="2026-01-29T22:43:42 CET" name="maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases" description="Maximum loan amount should increase when property value increases" finished-at="2026-01-29T22:44:03 CET" duration-ms="21066" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=144.0.7559.109)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f33b695e396bea14870c750639102e0d, findElement {using=css selector, value=input.mennyit_kaphatok}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HORVAT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63827}, goog:processID: 1344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63827/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f33b695e396bea14870c750639102e0d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=144.0.7559.109)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f33b695e396bea14870c750639102e0d, findElement {using=css selector, value=input.mennyit_kaphatok}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HORVAT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63827}, goog:processID: 1344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63827/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f33b695e396bea14870c750639102e0d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy6/jdk.proxy6.$Proxy44.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at hu.robertszujo.seleniumproject.utils.ElementActions.clickWhenClickable(ElementActions.java:70)
-at hu.robertszujo.seleniumproject.pages.LoanCalculatorPage.clickCalculateButton(LoanCalculatorPage.java:135)
-at hu.robertszujo.seleniumproject.BehaviorValidationTest.calculateMaxLoanAmount(BehaviorValidationTest.java:143)
-at hu.robertszujo.seleniumproject.BehaviorValidationTest.maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases(BehaviorValidationTest.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
-at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1212)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1090)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:910)
-at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method signature="failed_applicantTooOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:09 CET" name="failed_applicantTooOld" description="Invalid input: applicant too old" finished-at="2026-01-30T01:42:13 CET" duration-ms="3976" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- maximumLoanAmount_shouldIncrease_whenPropertyValueIncreases -->
-        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab]" started-at="2026-01-29T22:44:03 CET" name="baseAfterMethod" finished-at="2026-01-29T22:44:03 CET" duration-ms="132" status="PASS">
+        </test-method> <!-- failed_applicantTooOld -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:14 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:14 CET" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseAfterMethod -->
-        <test-method is-config="true" signature="baseAfterSuite()[pri:0, instance:hu.robertszujo.seleniumproject.BehaviorValidationTest@3f2cc8ab]" started-at="2026-01-29T22:44:03 CET" name="baseAfterSuite" finished-at="2026-01-29T22:44:03 CET" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:14 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:15 CET" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_applicantTooYoung()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_applicantTooYoung()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:15 CET" name="failed_applicantTooYoung" description="Invalid input: applicant too young" finished-at="2026-01-30T01:42:19 CET" duration-ms="4130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_applicantTooYoung -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:20 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:20 CET" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:20 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:21 CET" duration-ms="811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_dualEarnerBelowMinimumIncome()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_dualEarnerBelowMinimumIncome()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:21 CET" name="failed_dualEarnerBelowMinimumIncome" description="Invalid input: dual earner below minimum income" finished-at="2026-01-30T01:42:23 CET" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_dualEarnerBelowMinimumIncome -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:24 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:25 CET" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:25 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:25 CET" duration-ms="640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_jtmViolation50PercentRule()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_jtmViolation50PercentRule()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:25 CET" name="failed_jtmViolation50PercentRule" description="Invalid input: JTM violation with 50% rule (loan under 800k)" finished-at="2026-01-30T01:42:29 CET" duration-ms="3862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_jtmViolation50PercentRule -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:30 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:30 CET" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:30 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:31 CET" duration-ms="737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_jtmViolation60PercentRule()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_jtmViolation60PercentRule()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:31 CET" name="failed_jtmViolation60PercentRule" description="Invalid input: JTM violation with 60% rule (loan over 800k)" finished-at="2026-01-30T01:42:35 CET" duration-ms="4334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_jtmViolation60PercentRule -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:36 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:36 CET" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:36 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:37 CET" duration-ms="735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_propertyValueBelowMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_propertyValueBelowMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:37 CET" name="failed_propertyValueBelowMinimum" description="Invalid input: property value below minimum" finished-at="2026-01-30T01:42:40 CET" duration-ms="3778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_propertyValueBelowMinimum -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:41 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:41 CET" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:41 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:42 CET" duration-ms="722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=NegativeScenarioTest.failed_singleEarnerBelowMinimumIncome()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="failed_singleEarnerBelowMinimumIncome()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:42 CET" name="failed_singleEarnerBelowMinimumIncome" description="Invalid input: single earner below minimum income" finished-at="2026-01-30T01:42:45 CET" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failed_singleEarnerBelowMinimumIncome -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest@10683d9d]" started-at="2026-01-30T01:42:46 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:46 CET" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+      </class> <!-- hu.robertszujo.seleniumproject.loancalculator.NegativeScenarioTest -->
+      <class name="hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest">
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:08 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:09 CET" duration-ms="1416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:09 CET" name="behavior_maxLoanDecreasesWithOverdraftLimit" description="Max loan decreases when overdraft limit increases (income fixed, property high)" data-provider="installmentsIncreaseScenarios" finished-at="2026-01-30T01:42:17 CET" duration-ms="7791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[150000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanDecreasesWithOverdraftLimit -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:17 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:18 CET" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:18 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:18 CET" duration-ms="686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:18 CET" name="behavior_maxLoanDecreasesWithOverdraftLimit" description="Max loan decreases when overdraft limit increases (income fixed, property high)" data-provider="installmentsIncreaseScenarios" finished-at="2026-01-30T01:42:25 CET" duration-ms="6056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[125000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200001]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[700000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanDecreasesWithOverdraftLimit -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:25 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:25 CET" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:25 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:26 CET" duration-ms="769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanDecreasesWithOverdraftLimit(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:26 CET" name="behavior_maxLoanDecreasesWithOverdraftLimit" description="Max loan decreases when overdraft limit increases (income fixed, property high)" data-provider="installmentsIncreaseScenarios" finished-at="2026-01-30T01:42:33 CET" duration-ms="6523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[80000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[800000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanDecreasesWithOverdraftLimit -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:33 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:33 CET" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:33 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:34 CET" duration-ms="700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:34 CET" name="behavior_maxLoanIncreasesWithHouseholdIncome" description="Max loan increases when householdIncome increases (all other inputs fixed per scenario)" data-provider="householdIncomeIncreaseScenarios" finished-at="2026-01-30T01:42:40 CET" duration-ms="6642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1100000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithHouseholdIncome -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:41 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:41 CET" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:41 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:42 CET" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:42 CET" name="behavior_maxLoanIncreasesWithHouseholdIncome" description="Max loan increases when householdIncome increases (all other inputs fixed per scenario)" data-provider="householdIncomeIncreaseScenarios" finished-at="2026-01-30T01:42:48 CET" duration-ms="5604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[125000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1200000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1300000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithHouseholdIncome -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:48 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:48 CET" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:48 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:48 CET" duration-ms="594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithHouseholdIncome(long,boolean,long,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:48 CET" name="behavior_maxLoanIncreasesWithHouseholdIncome" description="Max loan increases when householdIncome increases (all other inputs fixed per scenario)" data-provider="householdIncomeIncreaseScenarios" finished-at="2026-01-30T01:42:53 CET" duration-ms="4513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[155000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1500000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1550000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithHouseholdIncome -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:53 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:53 CET" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:53 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:54 CET" duration-ms="673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:54 CET" name="behavior_maxLoanIncreasesWithPropertyValue" description="Max loan increases when propertyValue increases (all other inputs fixed per scenario)" data-provider="propertyValueIncreaseScenarios" finished-at="2026-01-30T01:42:58 CET" duration-ms="3627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithPropertyValue -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:58 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:58 CET" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:58 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:58 CET" duration-ms="648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:42:58 CET" name="behavior_maxLoanIncreasesWithPropertyValue" description="Max loan increases when propertyValue increases (all other inputs fixed per scenario)" data-provider="propertyValueIncreaseScenarios" finished-at="2026-01-30T01:43:02 CET" duration-ms="3788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[950000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithPropertyValue -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:02 CET" name="baseAfterMethod" finished-at="2026-01-30T01:43:03 CET" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:03 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:43:03 CET" duration-ms="631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_maxLoanIncreasesWithPropertyValue(long,long,boolean,long,long)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:03 CET" name="behavior_maxLoanIncreasesWithPropertyValue" description="Max loan increases when propertyValue increases (all other inputs fixed per scenario)" data-provider="propertyValueIncreaseScenarios" finished-at="2026-01-30T01:43:07 CET" duration-ms="3744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[35000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_maxLoanIncreasesWithPropertyValue -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:07 CET" name="baseAfterMethod" finished-at="2026-01-30T01:43:07 CET" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:07 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:43:08 CET" duration-ms="599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BehaviorValidationTest.behavior_thmDecreasesWithInsurance()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="behavior_thmDecreasesWithInsurance()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:08 CET" name="behavior_thmDecreasesWithInsurance" description="THM decreases when repayment protection insurance is selected" finished-at="2026-01-30T01:43:12 CET" duration-ms="3833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- behavior_thmDecreasesWithInsurance -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest@2f4948e4]" started-at="2026-01-30T01:43:12 CET" name="baseAfterMethod" finished-at="2026-01-30T01:43:12 CET" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+      </class> <!-- hu.robertszujo.seleniumproject.loancalculator.BehaviorValidationTest -->
+      <class name="hu.robertszujo.seleniumproject.BaseTestClass">
+        <test-method is-config="true" signature="baseBeforeSuite()[pri:0, instance:hu.robertszujo.seleniumproject.BaseTestClass@1165b38]" started-at="2026-01-30T01:42:07 CET" name="baseBeforeSuite" finished-at="2026-01-30T01:42:08 CET" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeSuite -->
+        <test-method is-config="true" signature="baseAfterSuite()[pri:0, instance:hu.robertszujo.seleniumproject.BaseTestClass@1165b38]" started-at="2026-01-30T01:43:12 CET" name="baseAfterSuite" finished-at="2026-01-30T01:43:12 CET" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseAfterSuite -->
-      </class> <!-- hu.robertszujo.seleniumproject.BehaviorValidationTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      </class> <!-- hu.robertszujo.seleniumproject.BaseTestClass -->
+      <class name="hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest">
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:08 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:09 CET" duration-ms="1417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_applicantExactly18YearsOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_applicantExactly18YearsOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:09 CET" name="success_applicantExactly18YearsOld" description="Boundary positive: applicant exactly 18 years old (minimum age)" finished-at="2026-01-30T01:42:13 CET" duration-ms="3995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_applicantExactly18YearsOld -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:14 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:14 CET" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:14 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:15 CET" duration-ms="740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_applicantExactly65YearsOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_applicantExactly65YearsOld()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:15 CET" name="success_applicantExactly65YearsOld" description="Boundary positive: applicant exactly 65 years old (maximum age)" finished-at="2026-01-30T01:42:19 CET" duration-ms="4365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_applicantExactly65YearsOld -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:20 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:20 CET" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:20 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:21 CET" duration-ms="820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_dualEarnerIncomeExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_dualEarnerIncomeExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:21 CET" name="success_dualEarnerIncomeExactlyAtMinimum" description="Boundary positive: dual earner income exactly 290,000 Ft (minimum)" finished-at="2026-01-30T01:42:28 CET" duration-ms="6929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_dualEarnerIncomeExactlyAtMinimum -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:28 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:28 CET" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:28 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:29 CET" duration-ms="692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_jtmExactlyAt50PercentLimit()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_jtmExactlyAt50PercentLimit()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:29 CET" name="success_jtmExactlyAt50PercentLimit" description="Boundary positive: existing installments exactly at 50% of income (under 800k overdraft)" finished-at="2026-01-30T01:42:33 CET" duration-ms="3792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_jtmExactlyAt50PercentLimit -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:33 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:33 CET" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:33 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:34 CET" duration-ms="800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_jtmExactlyAt60PercentLimit()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_jtmExactlyAt60PercentLimit()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:34 CET" name="success_jtmExactlyAt60PercentLimit" description="Boundary positive: existing installments exactly at 60% of income (at/over 800k overdraft)" finished-at="2026-01-30T01:42:38 CET" duration-ms="4186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_jtmExactlyAt60PercentLimit -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:39 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:39 CET" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:39 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:40 CET" duration-ms="674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_overdraftLimitExactlyAt800kThreshold()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_overdraftLimitExactlyAt800kThreshold()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:40 CET" name="success_overdraftLimitExactlyAt800kThreshold" description="Boundary positive: overdraft limit exactly at 800,000 Ft threshold" finished-at="2026-01-30T01:42:44 CET" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_overdraftLimitExactlyAt800kThreshold -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:44 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:44 CET" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:44 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:45 CET" duration-ms="683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_propertyValueExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_propertyValueExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:45 CET" name="success_propertyValueExactlyAtMinimum" description="Boundary positive: property value exactly 5,000,000 Ft (minimum)" finished-at="2026-01-30T01:42:48 CET" duration-ms="2911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_propertyValueExactlyAtMinimum -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:48 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:48 CET" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method is-config="true" signature="baseBeforeMethod(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:48 CET" name="baseBeforeMethod" finished-at="2026-01-30T01:42:49 CET" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c9b78e3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=BoundaryPositiveTest.success_singleEarnerIncomeExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method signature="success_singleEarnerIncomeExactlyAtMinimum()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:49 CET" name="success_singleEarnerIncomeExactlyAtMinimum" description="Boundary positive: single earner income exactly 193,000 Ft (minimum)" finished-at="2026-01-30T01:42:52 CET" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success_singleEarnerIncomeExactlyAtMinimum -->
+        <test-method is-config="true" signature="baseAfterMethod()[pri:0, instance:hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest@1f2586d6]" started-at="2026-01-30T01:42:52 CET" name="baseAfterMethod" finished-at="2026-01-30T01:42:52 CET" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+      </class> <!-- hu.robertszujo.seleniumproject.loancalculator.BoundaryPositiveTest -->
+    </test> <!-- Suite with listener -->
+  </suite> <!-- George Regression -->
 </testng-results>
