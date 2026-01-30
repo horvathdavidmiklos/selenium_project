@@ -1,5 +1,8 @@
-package hu.robertszujo.seleniumproject;
+package hu.robertszujo.seleniumproject.loancalculator;
 
+import hu.robertszujo.seleniumproject.BaseTestClass;
+import hu.robertszujo.seleniumproject.helper.Constant;
+import hu.robertszujo.seleniumproject.helper.FormState;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

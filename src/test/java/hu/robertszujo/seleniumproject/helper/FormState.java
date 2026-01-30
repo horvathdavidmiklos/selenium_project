@@ -1,4 +1,4 @@
-package hu.robertszujo.seleniumproject;
+package hu.robertszujo.seleniumproject.helper;
 
 import hu.robertszujo.seleniumproject.pages.LoanCalculatorPage;
 

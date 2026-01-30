@@ -8,7 +8,6 @@ import hu.robertszujo.seleniumproject.pages.components.CookiePopup;
 import hu.robertszujo.seleniumproject.reporter.ReporterSetup;
 import hu.robertszujo.seleniumproject.webdriver.ChromeDriverOptions;
 import hu.robertszujo.seleniumproject.webdriver.WebDriverSetup;
-import org.assertj.core.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestContext;
@@ -18,7 +17,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import static hu.robertszujo.seleniumproject.Constant.OVERDRAFT_LIMIT_NONE;
 import static hu.robertszujo.seleniumproject.constants.TestConstants.CALCULATOR_PAGE_URL;
 
 public class BaseTestClass {

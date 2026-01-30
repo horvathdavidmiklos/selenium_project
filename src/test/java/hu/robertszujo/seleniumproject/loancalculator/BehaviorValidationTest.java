@@ -1,9 +1,12 @@
-package hu.robertszujo.seleniumproject;
+package hu.robertszujo.seleniumproject.loancalculator;
 
+import hu.robertszujo.seleniumproject.BaseTestClass;
+import hu.robertszujo.seleniumproject.helper.FormState;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import static hu.robertszujo.seleniumproject.helper.Constant.*;
 import static hu.robertszujo.seleniumproject.constants.TestConstants.CALCULATOR_PAGE_URL;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,9 +17,9 @@ public class BehaviorValidationTest extends BaseTestClass {
     public Object[][] propertyValueIncreaseScenario() {
         return new Object[][]{
                 // propertyValue, higherPropertyValue, multiHousehold, existingInstallments, householdIncome
-                {30000000, 40000000, false, 0, 3000000},
-                {20000000, 25000000, true, 100000, 950000},
-                {30000000, 35000000, true, 20000, 1000000},
+                {30000000, 40000000, false, Long.parseLong(EXISTING_INSTALLMENTS_NONE), 3000000},
+                {20000000, 25000000, true, Long.parseLong(EXISTING_INSTALLMENTS_MEDIUM), 950000},
+                {30000000, 35000000, true, Long.parseLong(EXISTING_INSTALLMENTS_LOW), 1000000},
         };
     }
 
@@ -24,9 +27,9 @@ public class BehaviorValidationTest extends BaseTestClass {
     public Object[][] householdIncomeIncreaseScenarios() {
         return new Object[][]{
                 // propertyValue, multiHousehold, existingInstallments, householdIncome, higherHouseholdIncome
-                {100000000, true, 0, 1000000, 1100000,},
-                {125000000, true, 100000, 1200000, 1300000,},
-                {155000000, true, 20000, 1500000, 1550000,},
+                {100000000, true, Long.parseLong(EXISTING_INSTALLMENTS_NONE), 1000000, 1100000,},
+                {125000000, true, Long.parseLong(EXISTING_INSTALLMENTS_MEDIUM), 1200000, 1300000,},
+                {155000000, true, Long.parseLong(EXISTING_INSTALLMENTS_LOW), 1500000, 1550000,},
         };
     }
 
@@ -34,9 +37,9 @@ public class BehaviorValidationTest extends BaseTestClass {
     public Object[][] installmentsIncreaseScenarios() {
         return new Object[][]{
                 // propertyValue, multiHousehold, householdIncome, existingInstallments, lowerOverdraft, higherOverdraft
-                {100000000, true, 0, 150000, 1000000},
-                {125000000, true, 100000, 120000, 700000},
-                {80000000, true, 20000, 60000, 800000},
+                {100000000, true, Long.parseLong(EXISTING_INSTALLMENTS_NONE), Long.parseLong(EXISTING_INSTALLMENTS_MODERATE), Long.parseLong(OVERDRAFT_LIMIT_ACCEPTABLE)},
+                {125000000, true, Long.parseLong(EXISTING_INSTALLMENTS_MEDIUM), Long.parseLong(EXISTING_INSTALLMENTS_HIGH), Long.parseLong(OVERDRAFT_LIMIT_MODERATELY_HIGH)},
+                {80000000, true, Long.parseLong(EXISTING_INSTALLMENTS_LOW), Long.parseLong(EXISTING_INSTALLMENTS_MEDIUM), Long.parseLong(OVERDRAFT_LIMIT_THRESHOLD)},
         };
     }
 
@@ -141,10 +144,10 @@ public class BehaviorValidationTest extends BaseTestClass {
 
     private FormState givenBaseValidForm() {
         return new FormState()
-                .setHouseholdIncome(Constant.HOUSEHOLD_INCOME_HIGH)            // avoid income constraint
+                .setHouseholdIncome(HOUSEHOLD_INCOME_HIGH)
                 .setMultiHousehold(true)
-                .setExistingInstallments(Constant.EXISTING_INSTALLMENTS_NONE)  // avoid installment constraint
-                .setOverdraftLimit(Constant.OVERDRAFT_LIMIT_NONE);             // avoid overdraft constraint
+                .setExistingInstallments(EXISTING_INSTALLMENTS_NONE)
+                .setOverdraftLimit(OVERDRAFT_LIMIT_NONE);
     }
 
     // -------- WHEN helpers --------
@@ -173,7 +176,7 @@ public class BehaviorValidationTest extends BaseTestClass {
 
     private double whenCalculateThmWithInsurance(boolean insuranceSelected) {
         FormState form = givenBaseValidForm()
-                .setPropertyValue("50000000")
+                .setPropertyValue(PROPERTY_VALUE_SAVE)
                 .setInsuranceSelected(insuranceSelected);
 
         double result = calculateThm(form);
