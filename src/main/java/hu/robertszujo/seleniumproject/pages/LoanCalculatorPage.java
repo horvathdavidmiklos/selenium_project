@@ -68,6 +68,12 @@ public class LoanCalculatorPage extends BasePageObject {
     @FindBy(id = "box_1_max_desktop")
     private WebElement firstOfferAmount;
 
+    @FindBy(id = "box_1_thm")
+    private WebElement firstOfferThm;
+
+    @FindBy(id = "kedvezmeny_biztositasm")
+    private WebElement insuranceCheckbox;
+
     // *** Element methods ***
 
     public void waitForCalculatorFormToBeDisplayed() {
@@ -86,27 +92,27 @@ public class LoanCalculatorPage extends BasePageObject {
 
     public void enterPropertyValue(String amount) {
         reporter.info("Entering property value: " + amount);
-        ElementActions.clearAndType(propertyValueInput, amount);
+        ElementActions.clearAndType(propertyValueInput, amount, driver);
     }
 
     public void enterAge(String age) {
         reporter.info("Entering age: " + age);
-        ElementActions.clearAndType(ageInput, age);
+        ElementActions.clearAndType(ageInput, age, driver);
     }
 
     public void enterHouseholdIncome(String income) {
         reporter.info("Entering household income: " + income);
-        ElementActions.clearAndType(householdIncomeInput, income);
+        ElementActions.clearAndType(householdIncomeInput, income, driver);
     }
 
     public void enterExistingLoanInstallments(String amount) {
         reporter.info("Entering existing loan installments: " + amount);
-        ElementActions.clearAndType(existingInstallmentsInput, amount);
+        ElementActions.clearAndType(existingInstallmentsInput, amount, driver);
     }
 
     public void enterOverdraftLimit(String amount) {
         reporter.info("Entering overdraft limit: " + amount);
-        ElementActions.clearAndType(overdraftLimitInput, amount);
+        ElementActions.clearAndType(overdraftLimitInput, amount, driver);
     }
 
     public void selectSingleHousehold() {
@@ -205,6 +211,19 @@ public class LoanCalculatorPage extends BasePageObject {
         ElementActions.waitForElementToBeDisplayed(firstOfferAmount, driver);
         ElementActions.waitForTextToBePresent(firstOfferAmount, driver);
         return firstOfferAmount.getText().trim();
+    }
+
+    public String waitForFirstOfferThm() {
+        ElementActions.waitForElementToBeDisplayed(firstOfferThm, driver);
+        ElementActions.waitForTextToBePresent(firstOfferThm, driver);
+        return firstOfferThm.getText().trim();
+    }
+
+    public void setInsuranceSelected(boolean shouldBeSelected) {
+        reporter.info("Setting insurance checkbox selection state to: " + shouldBeSelected);
+        if (insuranceCheckbox.isSelected() != shouldBeSelected) {
+            ElementActions.clickWhenClickable(insuranceCheckbox, driver);
+        }
     }
 
     private boolean isElementVisuallyDisplayed(WebElement element) {

@@ -20,10 +20,12 @@ public class ElementActions {
                 .until(ExpectedConditions.invisibilityOf(elementToDisappear));
     }
 
-    public static void clearAndType(WebElement targetElement, String value) {
+    public static void clearAndType(WebElement targetElement, String value, WebDriver driver) {
+        new WebDriverWait(driver, ElementConstants.MAX_WAIT_DURATION)
+                .until(ExpectedConditions.elementToBeClickable(targetElement));
+        scrollIntoView(targetElement, driver);
         targetElement.click();
-        targetElement.sendKeys(Keys.chord(Keys.CONTROL, "a"));
-        targetElement.sendKeys(Keys.DELETE);
+        targetElement.sendKeys(Keys.CONTROL + "a");
         targetElement.sendKeys(value);
     }
 

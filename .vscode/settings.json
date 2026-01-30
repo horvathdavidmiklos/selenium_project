@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^\\$path = \"c:\\\\Users\\\\horvathd1\\\\IdeaProjects\\\\selenium_project2\\\\src\\\\test\\\\java\\\\hu\\\\robertszujo\\\\seleniumproject\\\\LoanCalculatorTests\\.java\"; \\$i = 0; Get-Content \\$path \\| ForEach-Object \\{ \\$i\\+\\+; \"\\{0,4\\}: \\{1\\}\" -f \\$i, \\$_ \\} \\| Select-Object -Index 100\\.\\.210$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

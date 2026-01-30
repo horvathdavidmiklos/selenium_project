@@ -1,52 +1,109 @@
 package hu.robertszujo.seleniumproject;
 
-import hu.robertszujo.seleniumproject.pages.LoanCalculatorPage;
-import lombok.Getter;
-import lombok.Setter;
+import org.assertj.core.api.AbstractBooleanAssert;
+import org.testng.annotations.Test;
 
-import java.util.function.Function;
+import static org.assertj.core.api.Assertions.assertThat;
 
-public class NegativeScenario extends BaseTestClass{
-    private static final String UNDERAGE_ERROR_MESSAGE = "Hitelt kizárólag 18. életévüket betöltött személyek igényelhetnek.";
-    private static final String PROPERTY_MINIMUM_ERROR_MESSAGE = "Minimum 5 millió forint érékű ingatlan szükséges";
-    private static final String MAX_AGE_ERROR_MESSAGE = "Sajnos jelenleg nem tudunk kalkulálni, kérjük add meg adataid és visszahívunk.";
-    private static final String DEBT_TO_INCOME_ERROR_MESSAGE = "A megadott jövedelemhez képest túl nagy a törlesztőrészlet.";
-
-    private static final String PROPERTY_VALUE_MINIMUM = "5000000";
-    private static final String PROPERTY_VALUE_BELOW_MINIMUM = "4999999";
-
-    private static final String AGE_TOO_YOUNG = "17";
-    private static final String AGE_APPROVED = "30";
-    private static final String AGE_TOO_OLD = "66";
-
-    private static final String HOUSEHOLD_INCOME_LOW = "193000";
-    private static final String HOUSEHOLD_INCOME_MEDIUM = "300000";
-    private static final String HOUSEHOLD_INCOME_RISKY = "400000";
-    private static final String HOUSEHOLD_INCOME_HIGH = "800000";
-
-    private static final String EXISTING_INSTALLMENTS_NONE = "0";
-    private static final String EXISTING_INSTALLMENTS_HIGH = "200001";
-    private static final String EXISTING_INSTALLMENTS_ACCEPTABLE = "200000";
-
-    private static final String OVERDRAFT_LIMIT_NONE = "0";
-
-    private NegativeScenario scenario =;
+public class NegativeScenarioTest extends BaseTestClass {
 
 
-    private NegativeScenario createNegativeScenario(){
-        return new NegativeScenario()
-                ;
+    // Age validation
+    @Test(description = "Invalid input: applicant too young")
+    public void failed_applicantTooYoung() {
+        var formState = new FormState().setAge(Constant.AGE_TOO_YOUNG);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForAgeErrorMessage();
+        assertFailedMessage(actualMessage, Constant.UNDERAGE_ERROR_MESSAGE, false);
     }
 
+    @Test(description = "Invalid input: applicant too old")
+    public void failed_applicantTooOld() {
+        var formState = new FormState().setAge(Constant.AGE_TOO_OLD);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForAgeErrorMessage();
+        assertFailedMessage(actualMessage, Constant.MAX_AGE_ERROR_MESSAGE, false);
+    }
 
+    // Property value validation
+    @Test(description = "Invalid input: property value below minimum")
+    public void failed_propertyValueBelowMinimum() {
+        var formState = new FormState().setPropertyValue(Constant.PROPERTY_VALUE_BELOW_MINIMUM);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForPropertyValueErrorMessage();
+        assertFailedMessage(actualMessage, Constant.PROPERTY_MINIMUM_ERROR_MESSAGE, false);
+    }
 
-    private static final class NegativeScenario {
+    // Single earner income validation
+    @Test(description = "Invalid input: single earner below minimum income")
+    public void failed_singleEarnerBelowMinimumIncome() {
+        var formState = new FormState()
+                .setSingleHousehold()
+                .setHouseholdIncome(Constant.HOUSEHOLD_INCOME_SINGLE_BELOW_MINIMUM);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForHouseholdIncomeErrorMessage();
+        assertFailedMessage(actualMessage, null, true);
+    }
 
+    // Dual earner income validation
+    @Test(description = "Invalid input: dual earner below minimum income")
+    public void failed_dualEarnerBelowMinimumIncome() {
+        var formState = new FormState()
+                .setMultiHousehold(true)
+                .setHouseholdIncome(Constant.HOUSEHOLD_INCOME_DUAL_BELOW_MINIMUM);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForHouseholdIncomeErrorMessage();
+        assertFailedMessage(actualMessage, null, true);
+    }
 
-        private final String name;
-        private final LoanCalculatorTests.FormState formState;
-        private final Function<LoanCalculatorPage, String> validationMessageFetcher;
-        private final String expectedValidationMessage;
-        private final boolean expectFallbackVisible;
+    // JTM violation - 50% rule (existing installments < 800k overdraft)
+    @Test(description = "Invalid input: JTM violation with 50% rule (loan under 800k)")
+    public void failed_jtmViolation50PercentRule() {
+        var formState = new FormState()
+                .setSingleHousehold()
+                .setHouseholdIncome(Constant.HOUSEHOLD_INCOME_RISKY)
+                .setExistingInstallments(Constant.JTM_50_PERCENT_VIOLATION);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForExistingInstallmentsErrorMessage();
+        assertFailedMessage(actualMessage, Constant.DEBT_TO_INCOME_ERROR_MESSAGE, true);
+    }
+
+    // JTM violation - 60% rule (existing installments >= 800k overdraft)
+    @Test(description = "Invalid input: JTM violation with 60% rule (loan over 800k)")
+    public void failed_jtmViolation60PercentRule() {
+        var formState = new FormState()
+                .setMultiHousehold(true)
+                .setHouseholdIncome(Constant.HOUSEHOLD_INCOME_RISKY)
+                .setExistingInstallments(Constant.JTM_60_PERCENT_VIOLATION)
+                .setOverdraftLimit(Constant.OVERDRAFT_LIMIT_THRESHOLD);
+        runValidation(formState);
+        String actualMessage = loanCalculatorPage.waitForExistingInstallmentsErrorMessage();
+        assertFailedMessage(actualMessage, Constant.DEBT_TO_INCOME_ERROR_MESSAGE, true);
+    }
+
+    private void runValidation(FormState formState) {
+        loadPageAndAcceptCookies();
+        loanCalculatorPage.waitForCalculatorFormToBeDisplayed();
+        formState.apply(loanCalculatorPage);
+        loanCalculatorPage.clickCalculateButton();
+    }
+
+    private void assertFailedMessage(String actualMessage, String expectedMessage, boolean isFallbackMessageVisible) {
+        if (expectedMessage != null) {
+            assertThat(actualMessage)
+                    .as("Validation message should match the expected content")
+                    .isEqualTo(expectedMessage);
+        } else {
+            assertThat(actualMessage)
+                    .as("Validation message should be populated")
+                    .isNotBlank();
+        }
+        assertThat(loanCalculatorPage.isFallbackMessageVisible())
+                .as("Fallback panel visibility should match scenario expectation")
+                .isEqualTo(isFallbackMessageVisible);
+        assertThat(loanCalculatorPage.isResultsSectionVisible())
+                .as("Loan offers must remain hidden when validation fails")
+                .isFalse();
+        reporter.pass("Validation message shown: " + actualMessage);
     }
 }
